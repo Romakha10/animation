@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: black;
+}
+.car2-img {
+  width: 200px;
+  height: 200px;
+}
+.car3-img {
+  width: 200;
+  height: 150px;
+}
+
+.animation {
+  margin-top: 300px;
+}
+
+.anim-left:nth-child(1) {
+  position: absolute;
+  margin-right: 550px;
+  animation-name: animationright;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.anim-right:nth-child(2) {
+  position: absolute;
+  margin-left: 550px;
+  animation-name: animationright2;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animationright {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 27%;
+  }
+}
+
+@keyframes animationright2 {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 27%;
+  }
+}
